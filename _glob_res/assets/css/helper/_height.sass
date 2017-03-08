@@ -1,0 +1,10 @@
+$screen-list: "0px", "768px", "992px", "1200px"
+$col: "xs", "sm", "md", "lg"
+
+@each $current-screen in $screen-list
+  $i: index($screen-list, $current-screen)
+  $h_start: 10
+  @media (min-width: #{$current-screen})
+    @for $ii from 0 through 6
+      .h-#{nth($col, $i)}-#{$h_start*$ii}
+        height :$h_start*$ii*1px!important

@@ -1,0 +1,30 @@
+@import "../compass-sass-mixins/lib/_compass"
+
+$primary: #1F40C9
+$primary_hover: darken($primary,3)
+$primary_focus: darken($primary,5)
+$primary_text: white
+
+.bg-primary
+  background: $primary
+  color: $primary_text
+.btn.bg-primary
+  color: $primary_text!important
+  &:hover
+    background: $primary_hover
+  &:focus
+    background: $primary_focus
+
+.text-primary
+  color: $primary
+
+.bd-primary
+  border-color: $primary!important
+
+.swiper-container.theme-primary
+  .swiper-pagination-bullet-active
+    background-color: $primary!important
+  .swiper-pagination-bullet
+    border: none!important
+    background:none
+    background: grey

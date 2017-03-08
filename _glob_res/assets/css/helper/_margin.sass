@@ -1,0 +1,28 @@
+
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+$screen-list: ("0px","768px","992px","1200px")
+$col: ("xs","sm","md","lg")
+@each $current-screen in $screen-list
+    $i: index($screen-list, $current-screen)
+    @media (min-width: #{$current-screen})
+      .m-l-#{nth($col,$i)}-auto
+        margin-left: auto!important
+      .m-r-#{nth($col,$i)}-auto
+        margin-right: auto!important
+      .m-both-#{nth($col,$i)}-auto
+        margin: auto!important
+      @for $gap-size from 0 through 30
+        .m-b-#{nth($col,$i)}-#{$gap-size}
+          margin-bottom:$gap-size*1px!important
+
+        .m-t-#{nth($col,$i)}-#{$gap-size}
+          margin-top:$gap-size*1px!important
+
+        .m-l-#{nth($col,$i)}-#{$gap-size}
+          margin-left:$gap-size*1px!important
+
+        .m-r-#{nth($col,$i)}-#{$gap-size}
+          margin-right:$gap-size*1px!important

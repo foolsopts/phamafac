@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteBase /lab/phamafac/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|img|robots\.txt)
+
+RewriteRule ^(.*)$ /lab/phamafac/index.php?/$1 [L]

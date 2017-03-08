@@ -1,0 +1,111 @@
+<?php
+$active_group = 'admin';
+$query_builder = TRUE;
+
+$db['admin'] = array(
+	'dsn'	=> 'mysql:host=localhost;dbname=pcg_admin;charset=utf8',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'admin',
+	'database' => '',
+	'dbdriver' => 'pdo',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => FALSE,
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+$db['ims'] = array(
+	'dsn'	=> 'mysql:host=localhost;dbname=ksb_test;charset=utf8',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'admin',
+	'database' => '',
+	'dbdriver' => 'pdo',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => FALSE,
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+$db['hr'] = array(
+	'dsn'	=> 'mysql:host=localhost;dbname=pcg_hr;charset=utf8',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'admin',
+	'database' => '',
+	'dbdriver' => 'pdo',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => FALSE,
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+$db['log'] = array(
+	'dsn'	=> 'mysql:host=localhost;dbname=pcg_log;charset=utf8',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'admin',
+	'database' => '',
+	'dbdriver' => 'pdo',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => FALSE,
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+$db['emp'] = array(
+	'dsn'	=> 'mysql:host=localhost;dbname=pcg_employee;charset=utf8',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'admin',
+	'database' => '',
+	'dbdriver' => 'pdo',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => FALSE,
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+?>

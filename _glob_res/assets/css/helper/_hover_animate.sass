@@ -1,0 +1,21 @@
+@import "compass-sass-mixins/lib/_compass"
+$duration: 0.5s
+$scale: 1.2
+$main_class: ".hover_animate"
+$effect_name: scale
+
+#{$main_class}
+  overflow: hidden
+  >img
+    transition-property: all
+    transition-duration: $duration
+
+@mixin my_scale($scale)
+  .scale>img
+    @include scale(1)
+    &:hover
+      @include scale($scale)
+
+
+@each $effect in $effect_name
+  @include my_scale($scale)

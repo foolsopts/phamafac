@@ -1,0 +1,11 @@
+#img-upload .form-group {
+  display: none;
+}
+#img-upload.ready .modal-header {
+  display: none;
+}
+#img-upload.ready .form-group {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */

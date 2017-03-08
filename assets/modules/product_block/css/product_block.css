@@ -1,0 +1,10 @@
+.thumbnail .album_set {
+    background-size: 100% auto!important;
+}
+.thumb-box-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.product_block .thumbnail {
+  cursor: pointer;
+}

@@ -1,0 +1,61 @@
+/*.navbar-brand, .navbar-form {
+  position: absolute;
+  z-index:1024;
+}*/
+
+.navbar-form {
+  right: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right:0;
+}
+
+.navbar-collapse {
+    position: relative;
+}
+.cat_pro {
+  margin-bottom: 15px;
+}
+.product_show {
+    margin-bottom: 20px;
+}
+#brandbar {
+  padding:0;
+}
+#brandbar>ul>li {
+  border-right: 1px solid gainsboro;
+}
+#brandbar>ul>li:first-child {
+  border-left: 1px solid gainsboro;
+}
+#brandbar>ul>li>a {
+  text-transform: uppercase;
+}
+.social_ico {
+    float: right;
+    margin-right: 10px;
+}
+
+
+
+/*////////////////Mobile////////////////////////////*/
+body.mobile .navbar-brand, body.mobile .navbar-form {
+  position:static;
+}
+
+body.mobile .navbar-form {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+body.mobile .nav-justified {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+body.mobile .navbar-default .navbar-nav>li>a{
+  text-align: left!important;
+}
+/*body.mobile .container, body.mobile .container-fluid {
+  padding:0;
+}*/

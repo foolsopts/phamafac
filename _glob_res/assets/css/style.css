@@ -1,0 +1,73 @@
+@import "helper.css";
+@import "color/color.css";
+@import "theme.css";
+@import url('https://fonts.googleapis.com/css?family=Athiti');
+
+html, body {
+    height: 100%;
+}
+html {
+        font-family: 'Athiti', sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+    }
+body {
+    font-family: 'Athiti',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.wrapper {
+    min-height: 90%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto 0; /* the bottom margin is the negative value of the footer's height */
+}
+section.content {
+    margin-bottom: 50px;
+}
+.navbar-form {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.nav-justified>li{
+  float:none!important;
+}
+.input-group {
+    border: 1px solid gainsboro;
+}
+
+.input-group * {
+    border: none;
+    box-shadow: none;
+}
+.input-group .input-group-addon {
+    background: none;
+    padding: 0;
+}
+a.text-danger {
+  color:#a94442!important;
+}
+.navbar {
+  min-height:1px!important;
+}
+ul.item-list>li, ul.item-list>li>a {
+  color: white;
+  font-size: 16px;
+}
+section.content .item-list>li .fa {
+  color: #155d85;
+}
+section.content .item-list>li, section.content .item-list>li>a {
+  color: black;
+}
+ul.item-list>li.social>img{
+  width: 30px;
+}
+.intro-box .fa{
+  color: #155d85;
+}
+/*.navbar-form.navbar-right {
+  padding-right:0!important;
+}*/

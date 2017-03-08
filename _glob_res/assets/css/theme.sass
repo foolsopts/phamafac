@@ -1,0 +1,253 @@
+@import "compass-sass-mixins/lib/_compass"
+
+.logo
+  width: 200px
+  margin: auto
+  padding: 15px 0
+
+.navbar-form
+  .btn-search
+    outline: none
+    &:hover, &:focus
+      background-color: transparent
+
+.input-group
+  background-color: white
+
+.intro-box
+    width: 200px
+    padding-left: 25px
+    .top
+      height: 60px
+      text-align: center
+    .bottom
+      text-align: center
+      font-size: 22px
+
+ul.item-list
+  list-style: none
+  text-align: left
+  padding: 0!important
+  .fa
+    width: 25px
+  li
+    line-height: 25px
+  li.social
+    margin-top: 15px
+
+// my_parallax//
+.a_parallax
+  position: relative
+  .f_parallax
+    overflow: hidden
+    clip: rect(0, auto, auto, 0)
+    width: 100%
+    top: 0
+    left: 0
+  .b_parallax
+    position:static
+    width: 100%
+
+// ----------//
+
+.page-heading
+    background: #f1f1f1
+    padding: 5px
+    .heading-text
+      margin: 0
+      color: #156088
+      font-weight: bold
+.page-heading.sub
+  .heading-text
+    color: black
+
+.intro
+  border-bottom: 1px solid gainsboro
+  .bottom
+    padding: 15px 0
+    font-size: 16px
+
+
+input
+  outline: none!important
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  box-shadow: none!important
+
+#top-menu
+  border-top: 1px solid gainsboro
+  border-bottom: 1px solid gainsboro
+  border-left: 0
+  border-right: 0
+  background-color: transparent
+  border-radius: 0
+
+  .navbar-form .input-group>.form-control
+    width: 0
+    padding: 15px 0
+    transition-duration: 0.5s
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000)
+  .navbar-form.active .input-group>.form-control
+      width: 200px
+      padding: 0px 15px
+
+  .navbar-nav
+    li
+      a
+        &:hover
+          color: #20409a
+          font-weight: bolder
+    li.active
+      a
+        color: #20409a
+        font-weight: bolder
+
+body.mobile.menu-open
+  overflow: hidden
+  height: 100vh
+  .navbar-toggle
+    position:absolute!important
+    top: 2px
+    right: -3px
+
+body:not(.mobile)
+  #top-menu
+    .navbar-nav:not(.navbar-right)
+      margin-left: -15px
+
+body.mobile
+  .intro-box
+      width: 100%
+      padding-left: 0px
+      .top
+        height: 60px
+        text-align: center
+      .bottom
+        text-align: center
+        font-size: 18px
+
+  #top-menu
+    height: 50px
+    .navbar-collapse
+      position: fixed
+      z-index: 1024
+      background: white
+      top: 0
+      padding-top: 50px
+      padding-bottom: 50px
+      height: 100%
+      width: 100vw
+      .navbar-nav
+          position: absolute
+          width: 100%
+          //height: 280px
+
+          li,li>a
+              text-align: center!important
+              font-size: 24px
+              line-height: 30px
+
+      .navbar-right
+        display: block
+        position: absolute
+        height: auto
+        top: 0
+        left: 0
+        margin: 0
+        padding-right: 50px
+        form.navbar-form
+          border: none
+          margin: 0
+
+    .dropdown-menu
+      li,a
+        font-size: 18px!important
+    .dropdown-menu>li:last-child
+      border-bottom: 1px solid gainsboro
+
+
+
+    .navbar-toggle
+      z-index: 1027
+
+    .navbar-form
+      input
+        width: 100%!important
+        padding: 0 15px!important
+
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+    background-color: transparent
+    border: none
+
+.navbar-toggle
+    border: none
+    transition-property: all
+    transition-duration: 0.6s
+
+/* navbar hamburger animate */
+.navbar-toggle.active
+    @include transform(rotate(360deg) scale(1.5))
+
+.navbar-toggle
+  .icon-bar:nth-of-type(2)
+	  top: 1px
+  .icon-bar:nth-of-type(3)
+  	top: 2px
+  .icon-bar
+	  position: relative
+	  transition: all 500ms ease-in-out
+
+.navbar-toggle.active
+  .icon-bar:nth-of-type(1)
+	  transform: rotate(45deg)translate(5px,5px)
+  .icon-bar:nth-of-type(2)
+    transform: rotate(-45deg)translate(0px,0px)
+  .icon-bar:nth-of-type(3)
+	  transform: scale(0)
+
+
+// span.icon-bar
+//   &:before
+//     content: ""
+//     position: absolute
+//     top: -5px
+//     left: 0
+//     background-color: grey
+//     width: 22px
+//     height: 2px
+//
+//   &:after
+//     content: ""
+//     position: absolute
+//     top: 5px
+//     left: 0
+//     background-color: grey
+//     width: 22px
+//     height: 2px
+//
+// .navbar-toggle
+//   .icon-bar, .icon-bar:before, .icon-bar:after
+//     content: ''
+//     width: 22px
+//     height: 2px
+//     position: absolute
+//     background-color: black!important
+//     right: 0
+//     left: 0
+//     @include transition(all .3s, top .3s, background-color 0s)
+//
+// .navbar-toggle.active
+//    .icon-bar
+//       background-color: transparent!important
+//       &:before
+//         top: 0
+//         @include rotate(135deg)
+//
+//       &:after
+//         top: 0
+//         @include rotate(225deg)

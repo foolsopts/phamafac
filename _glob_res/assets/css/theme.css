@@ -1,0 +1,265 @@
+.logo {
+		width: 200px;
+		margin: auto;
+		padding: 15px 0;
+}
+
+.navbar-form .btn-search {
+		outline: none;
+}
+
+.navbar-form .btn-search:hover, .navbar-form .btn-search:focus {
+		background-color: transparent;
+}
+
+.input-group {
+		background-color: white;
+}
+
+.intro-box {
+		width: 200px;
+		padding-left: 25px;
+}
+
+.intro-box .top {
+		height: 60px;
+		text-align: center;
+}
+
+.intro-box .bottom {
+		text-align: center;
+		font-size: 22px;
+}
+
+ul.item-list {
+		list-style: none;
+		text-align: left;
+		padding: 0 !important;
+}
+
+ul.item-list .fa {
+		width: 25px;
+}
+
+ul.item-list li {
+		line-height: 25px;
+}
+
+ul.item-list li.social {
+		margin-top: 15px;
+}
+
+.a_parallax {
+		position: relative;
+}
+
+.a_parallax .f_parallax {
+		overflow: hidden;
+		clip: rect(0, auto, auto, 0);
+		width: 100%;
+		top: 0;
+		left: 0;
+}
+
+.a_parallax .b_parallax {
+		width: 100%;
+}
+
+.page-heading {
+		background: #f1f1f1;
+		padding: 5px;
+}
+
+.page-heading .heading-text {
+		margin: 0;
+		color: #156088;
+		font-weight: bold;
+}
+
+.page-heading.sub .heading-text {
+		color: black;
+}
+
+.intro {
+		border-bottom: 1px solid gainsboro;
+}
+
+.intro .bottom {
+		padding: 15px 0;
+		font-size: 16px;
+}
+
+input {
+		outline: none !important;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		box-shadow: none !important;
+}
+
+#top-menu {
+		border-top: 1px solid gainsboro;
+		border-bottom: 1px solid gainsboro;
+		border-left: 0;
+		border-right: 0;
+		background-color: transparent;
+		border-radius: 0;
+}
+
+#top-menu .navbar-form .input-group > .form-control {
+		width: 0;
+		padding: 15px 0;
+		transition-duration: 0.5s;
+		transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+}
+
+#top-menu .navbar-form.active .input-group > .form-control {
+		width: 200px;
+		padding: 0px 15px;
+}
+
+#top-menu .navbar-nav li a:hover {
+		color: #20409a;
+		font-weight: bolder;
+}
+
+#top-menu .navbar-nav li.active a {
+		color: #20409a;
+		font-weight: bolder;
+}
+
+body.mobile.menu-open {
+		overflow: hidden;
+		height: 100vh;
+}
+
+body.mobile.menu-open .navbar-toggle {
+		position: absolute !important;
+		top: 2px;
+		right: -3px;
+}
+
+body:not(.mobile) #top-menu .navbar-nav:not(.navbar-right) {
+		margin-left: -15px;
+}
+
+body.mobile .intro-box {
+		width: 100%;
+		padding-left: 0px;
+}
+
+body.mobile .intro-box .top {
+		height: 60px;
+		text-align: center;
+}
+
+body.mobile .intro-box .bottom {
+		text-align: center;
+		font-size: 18px;
+}
+
+body.mobile #top-menu {
+		height: 50px;
+}
+
+body.mobile #top-menu .navbar-collapse {
+		position: fixed;
+		z-index: 1024;
+		background: white;
+		top: 0;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		height: 100%;
+		width: 100vw;
+}
+
+body.mobile #top-menu .navbar-collapse .navbar-nav {
+		position: absolute;
+		width: 100%;
+}
+
+body.mobile #top-menu .navbar-collapse .navbar-nav li, body.mobile #top-menu .navbar-collapse .navbar-nav li > a {
+		text-align: center !important;
+		font-size: 24px;
+		line-height: 30px;
+}
+
+body.mobile #top-menu .navbar-collapse .navbar-right {
+		display: block;
+		position: absolute;
+		height: auto;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding-right: 50px;
+}
+
+body.mobile #top-menu .navbar-collapse .navbar-right form.navbar-form {
+		border: none;
+		margin: 0;
+}
+
+body.mobile #top-menu .dropdown-menu li, body.mobile #top-menu .dropdown-menu a {
+		font-size: 18px !important;
+}
+
+body.mobile #top-menu .dropdown-menu > li:last-child {
+		border-bottom: 1px solid gainsboro;
+}
+
+body.mobile #top-menu .navbar-toggle {
+		z-index: 1027;
+}
+
+body.mobile #top-menu .navbar-form input {
+		width: 100% !important;
+		padding: 0 15px !important;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: transparent;
+		border: none;
+}
+
+.navbar-toggle {
+		border: none;
+		transition-property: all;
+		transition-duration: 0.6s;
+}
+
+/* navbar hamburger animate */
+.navbar-toggle.active {
+		-webkit-transform: rotate(360deg) scale(1.5);
+		-moz-transform: rotate(360deg) scale(1.5);
+		-ms-transform: rotate(360deg) scale(1.5);
+		-o-transform: rotate(360deg) scale(1.5);
+		transform: rotate(360deg) scale(1.5);
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+		top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+		top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+		position: relative;
+		transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+		transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+		transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+		transform: scale(0);
+}
